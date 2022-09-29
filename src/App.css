@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+.post p,a,span{
+  font-weight: bold;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.explain {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  height: 50px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.line span {
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+  width: 50%;
+}
+.goodbtn {
+  margin-top: 60px;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: #38bbeb;
   color: white;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.content {
+  height: auto;
+  width: 90%;
+  word-break: break-all;
+  border: none;
+  margin-top: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listbtn {
+  float: left;
+}
+.con {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.listbtn {
+  background-color: white;
+  margin-top: 30px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.prev {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+.prevComment,
+.comment {
+  text-decoration: none;
+  color: #38bbeb;
+}
+.commentlist {
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+.author{
+  text-align: center;
+  width: 100px;
+}
+.date{
+  text-align: center;
+  width: 300px;
+}
+.story{
+  padding-left: 10px;
+  width: 100%;
+}
+.author,
+.story {
+  border-right: 1px solid black;
+}
+.textbox{
+  width: 90%;
+  margin-top: 150px;
+  border-radius: 10px;
+  height: 200px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+h1,
+.listbtn,
+.comment,
+.commentlist,
+.textbox{
+  margin-left: 70px;
+}
+.sub{
+  float: right;
+  margin-right: 70px;
+  border: none;
+  background-color: #38bbeb;
+  color: white;
+  border-radius: 5px;
+  width: 90px;
+  height: 30px;
+  font-size: 15 px;
 }
